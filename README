@@ -1,82 +1,65 @@
+1、QXmlEdit 简介
 
-QXmlEdit
---------
+QXmlEdit 是一个基于 Qt 库的简单 XML 编辑器。其主要特征是不寻常的数据可视化模式，很好的XML操作和表示，它是多平台的。
+它可以拆分非常大的XML文件，并将XML文件进行比较。它是为数不多的图形化开源XSD查看器之一。
+XML编辑器小部件基于一个可以导入并在其他应用程序中使用的库。
+它是在 GNU LGPL V2 许可证下发布的，需要 Qt4 或 Qt5 库的开源版本。
 
-QXmlEdit is a simple XML editor based on qt libraries. Its main features are unusual data visualization modes,
-nice XML manipulation and presentation and it is multi platform. It can split very big XML files
-into fragments, and compare XML files. It is one of the few graphical Open Source XSD viewers.
+*XML元素的分层可定制视图。
+*快速XML层次导航。
+*拆分大型XML文件。
+*支持XPath表达式的搜索。
+*Base 64数据处理。
+*可视化样式。
+*XML架构（XSD）查看器。
+*柱状视图。
+*会话处理。
+*图形XML文件视图。
+*XML文档的映射视图。
+*大XML文件的分割和片段提取。
+*XML架构文件的可视化比较。
+*XML文件的可视化比较。
+*XML代码段。
+*XSL专用模式。
+*通过用户自定义规则显示元素。
+*SCXML编辑模式。
 
-The XML editor widget is based on a library that can be imported and used in other applications.
+一些图标文件由 oxygen 项目授权，并受LGPL V3保护（参见http://www.oxygen-icons.org)
+包含许可证副本。图标的来源可以从上面的网站获得，但图像/svg中包含一份副本源目录。
+此目录中的所有图标都是按 oxygen 项目显示的。“Images”目录中的图像由 oxygen 导出，
+不包括原创作品 mainIcons.icns、icon.png和icon.svg。
 
-It is relased under GNU LGPL V2 license and requires Open Source edition of the Qt4 or Qt5 libraries.
+QXmlEdit可以与QwtPlot3D库链接。
 
-  * Hierarchical customizable view of XML elements.
-  * Fast XML hierarchy navigation.
-  * Split of big XML files.
-  * Search supporting XPath expressions.
-  * Base 64 data handling.
-  * Visualization styles.
-  * XML Schema (XSD) viewer.
-  * Columnar view.
-  * Sessions handling.
-  * Graphical XML file view.
-  * Map view of a XML document.
-  * Split and fragment extraction of big XML files.
-  * Visual compare of XML Schema files.
-  * Visual compare of XML files.
-  * XML Snippets.
-  * XSL specialized mode.
-  * Element display via user customizable rules.
-  * SCXML edit mode.
+2、网站和源代码
 
-Some icon files are licensed by oxygen project and covered by LGPL V3 (see http://www.oxygen-icons.org)
-A copy of the license is included. Source for icons can be obtained from site above, but a copy is included in images/svg
-source directory. All icons in this directory are by oxygen project. Images in 'images' directory are derived by oxygen,
-excluding mainIcons.icns, icon.png and icon.svg that are original work.
-QXmlEdit can be linked with QwtPlot3D library.
+项目网站为: qxmledit.org
+源代码链接当前为: https://github.com/zyyujq/qxmledit  和  https://github.com/lbellonda/qxmledit
 
-Site and source code
---------------------
-The project site is: qxmledit.org
-The source code link is currently:
-https://github.com/lbellonda/qxmledit
+讨论组: http://groups.google.com/group/qxmledit-discuss
 
-Discussion group:
------------------
-http://groups.google.com/group/qxmledit-discuss
+发布tarball和二进制包:   https://sourceforge.net/projects/qxmledit/files
 
-Release tarballs and binary packages:
--------------------------------------
-https://sourceforge.net/projects/qxmledit/files
+3、必要条件
 
-Requirements
-------------
-Qt libraries version 4.7.3 or higher are required.
-Qt 5 is supported.
-OpenGL can be required depending on a compile time switch.
+需要 Qt库 4.7.3 或更高版本。支持Qt 5。
+根据编译时的切换，可能需要OpenGL。
 
-Limitations
------------
-Very limited support of DTD.
+4、局限性
 
-License and notes on QwtPlot3D
-------------------------------
-QXmlEdit is released under LGPL V2, includes Oxygen icons and optionally can link
-with QwtPlot3D library. QwtPlot3D is not part of QXmlEdit and its source is
-included for convenience when compiling.
-QwtPlot3D comes with its own license (ZLib like) as specified in its files.
-You are free to link or not with QwtPlot3D by enabling a compile time switch
-as defined in the INSTALL file or to replace it.
-QwtPlot3D requires OpenGL.
+对DTD的支持非常有限。
 
-As a special exception, the copyright holders of QXmlEdit give you permission to combine
-QXmlEdit with free software programs or libraries that are released under the GNU LGPL
-and with code included in the standard release of QwtPlot3D (under the ZLib like license)
-or modified versions of such code, with unchanged license.
-You may copy and distribute such a system following the terms of the
-GNU LGPL for QXmlEdit and the licenses of the other code concerned.
-People who make modified versions of QXmlEdit are not obligated to grant this special
-exception for their modified versions; it is their choice whether to do so.
-The GNU Library General Public License gives permission to release a modified version
-without this exception; this exception also makes it possible to release a modified
-version which carries forward this exception.
+5、QwtPlot3D的许可证和注意事项
+
+QXmlEdit 在 LGPL V2下发布，包括 oxygen 图标，并可选择链接使用QwtPlot3D库。
+QwtPlot3D 不是 QXmlEdit 的一部分，其源为为便于编译，已包含在内。
+QwtPlot3D 具有其文件中指定的自己的许可证（类似ZLib）。
+通过启用编译时开关，您可以自由链接或不链接 QwtPlot3D，如INSTALL文件中所定义，或替换它。
+
+QwtPlot3D 需要 OpenGL。
+
+作为特殊例外，QXmlEdit 的版权所有者允许您将 QXmlEdit 与根据 GNU LGPL 发布的自由软件程序或库结合使用,
+并且代码包含在 QwtPlot3D 的标准版本中（在ZLib类许可证下）或此类代码的修改版本中，许可证不变。
+您可以按照GNU LGPL for QXmlEdit的条款和其他相关代码的许可证复制和分发此类系统。
+制作 QXmlEdit 修改版本的人没有义务为其修改版本授予此特殊例外；是否这样做是他们的选择。
+GNU 库通用公共许可证允许发布修改后的版本，无一例外；此异常也使得发布携带此异常的修改版本成为可能。
